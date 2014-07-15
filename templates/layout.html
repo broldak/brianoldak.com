@@ -3,29 +3,21 @@
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/reset.css') }}">
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
 
+<title>Brian Oldak</title>
+
 <div id="app-wrapper">
-  {% block nav %}
-    <div class="navbar">
-      <div class="nav-list">
-        <ul class="nav-left">
-          <li class="nav-item" id="nav-title">
-            Brian Oldak
-          </li>
-        </ul>
-        <ul class="nav-right">
-          <li class="nav-item">
-            Work
-          </li>
-          <li class="nav-item">
-            Contact
-          </li>
-          <li class="nav-item">
-            Resume
-          </li>
-        </ul>
-      </div>
+  <div class="top-section">
+    <div class="me-icon">
+      <img class="me-icon-img" src=" {{url_for('static', filename='img/me.png') }}"/>
     </div>
-  {% endblock %}
+    <div class="title-text">
+      Brian Oldak
+    </div>
+    <hr class="title-separator">
+    <div class="subtitle-text">
+      Mobile and Web Developer currently at Carnegie Mellon University
+    </div>
+  </div>
 
   <div id="body-wrapper">
     {% block body %}{% endblock %}
