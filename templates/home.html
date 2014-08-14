@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block home %}
+<div class="top-section">
+  <div class="top-inner">
+    <div class="me-icon">
+      <img class="me-icon-img" src=" {{url_for('static', filename='img/me.png') }}"/>
+    </div>
+    <div class="title-text">
+      Brian Oldak
+    </div>
+    <hr class="title-separator">
+    <div class="subtitle-text">
+      Mobile and Web Developer currently at Carnegie Mellon University
+    </div>
+  </div>
+</div>
+
+<div id="work-section">
+  {% include "work.html" %}
+  <!--<ul class="social-buttons-list">
+    <li class="social-button li"><a target= "_blank" href="https://www.linkedin.com/profile/view?id=189674411&authType=name&authToken=K8jw&locale=en_US&pvs=pp&trk=ppro_viewmore">LinkedIn</a></li>
+    <li class="social-button tw"><a target= "_blank" href="https://twitter.com/broldak">Twitter</a></li>
+    <li class="social-button gh"><a target= "_blank" href="https://github.com/broldak">Github</a></li>
+    <li class="social-button em"><a href="mailto:broldak@gmail.com">Email</a></li>
+  </ul>-->
+</div>
+
+<div id="projects-section">
+  {% include "projects.html" %}
+</div>
+{% endblock %}
