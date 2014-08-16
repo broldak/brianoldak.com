@@ -2,16 +2,28 @@
 
 {% block home %}
 <div class="top-section">
+  <div class="nav-top">
+    <ul class="nav-top-list nav-left">
+      <li class="nav-item">home</li>
+      <li class="nav-item">resume</li>
+    </ul>
+    <ul class="nav-top-list nav-right">
+      <li class="nav-item">contact</li>
+      <li class="nav-item">work</li>
+    </ul>
+  </div>
   <div class="top-inner">
     <div class="me-icon">
       <img class="me-icon-img" src=" {{url_for('static', filename='img/me.png') }}"/>
     </div>
-    <div class="title-text">
-      Brian Oldak
-    </div>
-    <hr class="title-separator">
-    <div class="subtitle-text">
-      Web Developer currently at Carnegie Mellon University
+    <div class="top-info">
+      <div class="title-text">
+        Brian Oldak
+      </div>
+      <hr class="title-separator">
+      <div class="subtitle-text">
+        Web Developer currently at Carnegie Mellon University
+      </div>
     </div>
   </div>
 </div>

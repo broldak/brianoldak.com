@@ -1,18 +1,20 @@
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
+  min-width: 500px;
 }
 
 .top-section {
-  height:480px;
+  height: 540px;
   background-color: #1b1e2b;
   margin: 0 auto;
   text-align: center;
   position: relative;
+  min-width: 500px;
 }
 
 .top-inner {
-  padding-top: 25px;
+  padding-top: 40px;
 }
 
 .section {
@@ -32,30 +34,38 @@ body, html {
   height: 100%;
 }
 
-.navbar {
+.nav-top {
   position: absolute;
-  bottom: 2px;
-  height: 50px;
-}
-
-.title-text {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
+  top: 10px;
   color: #fff;
-  padding: 0;
+  width: 100%;
+  text-align: left;
+  min-width: 500px;
 }
 
-.nav-list {
-  line-height: 50px;
+.nav-top-list {
+  width: 40%;
+}
+
+.nav-right {
+  float: right;
+  text-align: left;
 }
 
 .nav-left {
   float: left;
-  padding-left: 20px;
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  width: 49%;
+  font-size: 20px;
+  text-align: center;
 }
 
 .me-icon {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .me-icon-img {
@@ -63,16 +73,25 @@ body, html {
   height: 250px;
 }
 
+.top-info {
+  width: 400px;
+  margin: 0 auto;
+  border: 4px solid #93a8b6;
+  padding: 20px;
+}
+
 .title-text {
-  color: #fff;
-  font-size: 70px;
-  margin-bottom: 15px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 60px;
+  color: #efefef;
+  padding: 0;
 }
 
 .subtitle-text {
   padding-top: 10px;
-  color: #fff;
-  font-size: 22px;
+  font-size: 24px;
+  color: #cbdee7;
   width: 280px;
   margin: 0 auto;
   line-height: 1.2;
@@ -87,17 +106,6 @@ body, html {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.nav-right {
-  float: right;
-  padding-right: 40px;
-}
-
-.nav-item {
-  display: inline;
-  color: #fff;
-  padding-left: 40px;
-}
-
 .headline {
   font-size: 36px;
   font-family: 'Roboto Slab', serif;
@@ -105,8 +113,7 @@ body, html {
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
-  margin-right: 320px;
-  margin-left: 320px;
+  margin: 0 auto;
   padding-bottom: 10px;
   color: #fff;
 }
