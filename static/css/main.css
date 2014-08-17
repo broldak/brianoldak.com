@@ -1,7 +1,7 @@
 body, html {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
-  min-width: 500px;
+  min-width: 550px;
 }
 
 .top-section {
@@ -10,7 +10,7 @@ body, html {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  min-width: 500px;
+  min-width: 550px;
 }
 
 .top-inner {
@@ -26,7 +26,9 @@ body, html {
 }
 
 #projects-section {
-  background-color: #245372
+  background-color: #314a6c;
+  margin: 0 auto;
+  height: 840px;
 }
 
 #body-wrapper {
@@ -62,6 +64,15 @@ body, html {
   width: 49%;
   font-size: 20px;
   text-align: center;
+}
+
+.nav-item a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #bcbcbc;
 }
 
 .me-icon {
@@ -107,15 +118,70 @@ body, html {
 }
 
 .headline {
-  font-size: 36px;
+  font-size: 48px;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
   margin: 0 auto;
-  padding-bottom: 10px;
-  color: #fff;
+  padding-bottom: 30px;
+  color: #efefef;
+}
+
+.work-detail-container {
+  border: 4px solid #efefef;
+  min-width: 450px;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.work-item {
+  color: #1f2033;
+  line-height: 1.2;
+  padding-bottom: 30px;
+}
+
+.work-description {
+  float: right;
+  width: 260px;
+  text-align: right;
+  line-height: 1.4;
+  font-size: 20px;
+}
+
+.company-name {
+  font-weight: 300;
+  font-size: 26px;
+  display: inline-block;
+}
+
+.projects-container {
+  margin: 0 auto;
+  padding-top: 30px;
+  max-width: 650px;
+  min-width: 550px;
+}
+
+.project-preview {
+  width: 210px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  display: inline-block;
+  height: 280px;
+  border: 4px solid #efefef;
+  padding: 10px
+}
+
+.work-time {
+  display: block;
+  font-size: 18px;
+  width: 170px;
 }
 
 .rrssb-buttons {
